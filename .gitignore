@@ -1,2 +1,3 @@
 ./BankingAPI/src/main/resources/connection.properties
+./BankingAPI/target/classes/connection.properties
 connection.properties
