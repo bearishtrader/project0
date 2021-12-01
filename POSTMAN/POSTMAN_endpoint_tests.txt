@@ -1,0 +1,1327 @@
+22:49:59.307 POST http://localhost:9000/clients/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54705
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "5a1478c5-e177-4e16-87ef-964ba971c909",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "83"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_20\",\r\n    \"lastName\": \"Twenty\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:49:53 GMT",
+    "content-type": "application/json",
+    "content-length": "112"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Client{clientId=null, firstName='Client_20', lastName='Twenty'} created successfully.\"}"
+}
+22:50:27.118 GET http://localhost:9000/clients/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54705
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "19a54de2-1849-4735-b4a7-8bf20176359f",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "83"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_20\",\r\n    \"lastName\": \"Twenty\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:50:23 GMT",
+    "content-type": "application/json",
+    "content-length": "1166"
+  },
+  "Response Body": "[{\"clientId\":1,\"firstName\":\"First\",\"lastName\":\"Client\"},{\"clientId\":2,\"firstName\":\"Client_2\",\"lastName\":\"Two\"},{\"clientId\":3,\"firstName\":\"Client_3\",\"lastName\":\"Three\"},{\"clientId\":4,\"firstName\":\"Jason\",\"lastName\":\"Chan\"},{\"clientId\":5,\"firstName\":\"Margaret\",\"lastName\":\"Chen\"},{\"clientId\":6,\"firstName\":\"John\",\"lastName\":\"Smith+\"},{\"clientId\":7,\"firstName\":\"Jane\",\"lastName\":\"Doe\"},{\"clientId\":8,\"firstName\":\"Client_8\",\"lastName\":\"Eight\"},{\"clientId\":9,\"firstName\":\"Client_9\",\"lastName\":\"Nine\"},{\"clientId\":10,\"firstName\":\"Pat\",\"lastName\":\"O'Toole\"},{\"clientId\":11,\"firstName\":\"Margaret\",\"lastName\":\"Thatcher\"},{\"clientId\":12,\"firstName\":\"Client12\",\"lastName\":\"Updated_by_PUT\"},{\"clientId\":13,\"firstName\":\"Client_13\",\"lastName\":\"Thirteen\"},{\"clientId\":14,\"firstName\":\"Client_14\",\"lastName\":\"Fourteen\"},{\"clientId\":15,\"firstName\":\"Client_15\",\"lastName\":\"Fifteen\"},{\"clientId\":16,\"firstName\":\"Client_16\",\"lastName\":\"Sixteen\"},{\"clientId\":17,\"firstName\":\"Client_17\",\"lastName\":\"Seventeen\"},{\"clientId\":18,\"firstName\":\"New\",\"lastName\":\"Client_201\"},{\"clientId\":19,\"firstName\":\"Client19\",\"lastName\":\"Nineteen\"},{\"clientId\":20,\"firstName\":\"Client_20\",\"lastName\":\"Twenty\"}]"
+}
+22:50:51.556 GET http://localhost:9000/clients/10: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54705
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "da449a14-6727-4ef4-881c-eebf6b8c40cb",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "83"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_20\",\r\n    \"lastName\": \"Twenty\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:50:45 GMT",
+    "content-type": "application/json",
+    "content-length": "54"
+  },
+  "Response Body": "{\"clientId\":10,\"firstName\":\"Pat\",\"lastName\":\"O'Toole\"}"
+}
+22:51:09.948 GET http://localhost:9000/clients/21: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54705
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "171a4e52-b4c3-45f8-ac98-b3754119cca8",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "83"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_20\",\r\n    \"lastName\": \"Twenty\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:51:08 GMT",
+    "content-type": "application/json",
+    "content-length": "61"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Client with clientId=21 not found.\"}"
+}
+22:52:14.760 PUT http://localhost:9000/clients/12: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54735
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "2c13f025-1f5c-467e-9c9e-1301e54c342c",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "82"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_12\",\r\n    \"lastName\": \"Put12\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:52:10 GMT",
+    "content-type": "application/json",
+    "content-length": "58"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Client 12 successfully updated.\"}"
+}
+22:53:34.181 PUT http://localhost:9000/clients/21: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54735
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "c2de28f8-2d1b-4754-83eb-4a7e6736f84e",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "92"
+  },
+  "Request Body": "{\r\n    \"clientId\":null,\r\n    \"firstName\": \"Client_21\",\r\n    \"lastName\": \"Put21_not_exist\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:52:33 GMT",
+    "content-type": "application/json",
+    "content-length": "83"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Update unsuccessful.  Client with clientId=21 not found.\"}"
+}
+22:54:31.482 DELETE http://localhost:9000/clients/15: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54758
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "3099b2b4-9eac-46db-9e36-0377ae356066",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:54:26 GMT",
+    "content-type": "application/json",
+    "content-length": "72"
+  },
+  "Response Body": "{\"status\":205,\"message\":\"Client with clientID=15 successfully deleted.\"}"
+}
+22:55:07.575 DELETE http://localhost:9000/clients/21: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54771
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "96c0f7c3-5358-4525-8fb7-b95053198268",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:55:03 GMT",
+    "content-type": "application/json",
+    "content-length": "83"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Delete unsuccessful.  Client with clientID=21 not found.\"}"
+}
+22:58:16.302 POST http://localhost:9000/clients/5/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54802
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "ae5e51cb-2a98-4a7a-a206-6244b0beb280",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "67"
+  },
+  "Request Body": "{\r\n    \"accountId\":5,\r\n    \"clientId\":null,\r\n    \"balance\":55.55\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:58:10 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=5, clientId=5, balance=55.55} created successfully.\"}"
+}
+22:58:54.254 GET http://localhost:9000/clients/7/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54808
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "a0580056-f2a6-4c6b-9295-9b97b755c5ef",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "67"
+  },
+  "Request Body": "{\r\n    \"accountId\":5,\r\n    \"clientId\":null,\r\n    \"balance\":55.55\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 04:58:50 GMT",
+    "content-type": "application/json",
+    "content-length": "136"
+  },
+  "Response Body": "[{\"accountId\":1,\"clientId\":7,\"balance\":0.12},{\"accountId\":2,\"clientId\":7,\"balance\":300.12},{\"accountId\":3,\"clientId\":7,\"balance\":500.0}]"
+}
+23:00:15.400 GET http://localhost:9000/clients/21/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54820
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "15728bc0-0960-434a-aa48-1ca31b76c940",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:00:01 GMT",
+    "content-type": "application/json",
+    "content-length": "62"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No accounts found with clientID=21.\"}"
+}
+23:02:49.986 GET http://localhost:9000/clients/7/accounts?amountLessThan=2000&amountGreaterThan=400: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54854
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "8dc85b4e-0a41-4916-9593-000059f011aa",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:02:43 GMT",
+    "content-type": "application/json",
+    "content-length": "46"
+  },
+  "Response Body": "[{\"accountId\":3,\"clientId\":7,\"balance\":500.0}]"
+}
+23:03:29.085 GET http://localhost:9000/clients/21/accounts?amountLessThan=2000&amountGreaterThan=400: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54854
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "779c124f-beaf-4296-b2be-03db2f923651",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:03:02 GMT",
+    "content-type": "application/json",
+    "content-length": "76"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No accounts and/or client exists for clientId=21.\"}"
+}
+23:04:22.282 GET http://localhost:9000/clients/9/accounts/4: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54871
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "c40fa477-1a87-4601-8dff-227a8d367db1",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:04:21 GMT",
+    "content-type": "application/json",
+    "content-length": "43"
+  },
+  "Response Body": "{\"accountId\":4,\"clientId\":9,\"balance\":5.95}"
+}
+23:05:00.931 GET http://localhost:9000/clients/21/accounts/4: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54883
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "37dd411c-32c8-4e8c-980e-90db336defec",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:04:59 GMT",
+    "content-type": "application/json",
+    "content-length": "73"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No account found with clientId=21 accountId=4.\"}"
+}
+23:06:22.318 GET http://localhost:9000/clients/9/accounts/5: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54899
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "f782a233-db4f-4a3c-aa6c-2a1ec4f40eb2",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:06:13 GMT",
+    "content-type": "application/json",
+    "content-length": "72"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No account found with clientId=9 accountId=5.\"}"
+}
+23:09:40.275 PUT http://localhost:9000/clients/10/accounts/3: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54950
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "492317e7-df09-401e-ba27-bf6aa663ad39",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "70"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":99.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:09:39 GMT",
+    "content-type": "application/json",
+    "content-length": "97"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Account 3 for clientId=10 successfully updated.  Balance is now 99.95.\"}"
+}
+23:10:17.944 PUT http://localhost:9000/clients/10/accounts/4: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54960
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "acad7e60-29d1-40cd-874f-3453faa737b1",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "70"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":99.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:10:13 GMT",
+    "content-type": "application/json",
+    "content-length": "72"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No account found with clientId=10 accountId=4\"}"
+}
+23:10:43.059 PUT http://localhost:9000/clients/21/accounts/4: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54960
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "16ee3d90-00ed-4383-ab41-5db93e19c157",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "70"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":99.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:10:30 GMT",
+    "content-type": "application/json",
+    "content-length": "72"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"No account found with clientId=21 accountId=4\"}"
+}
+23:11:11.472 DELETE http://localhost:9000/clients/15/accounts/6: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 54960
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "59b9c9e7-db5d-4117-afcf-3b7183905ec2",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:11:09 GMT",
+    "content-type": "application/json",
+    "content-length": "117"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Delete account unsuccessful.  Account (accountID=6) and/or client (clientId=15) not found.\"}"
+}
+23:12:30.225 POST http://localhost:9000/clients/15: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59686
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "8411cded-53c2-40c7-a055-2c35435233a9",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "90"
+  },
+  "Request Body": "{\r\n    \"clientId\":15,\r\n    \"firstName\":\"Client_15\",\r\n    \"lastName\":\"WasDeletedNowBack\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:12:30 GMT",
+    "content-type": "text/plain",
+    "content-length": "9"
+  },
+  "Response Body": "Not found"
+}
+23:12:43.252 POST http://localhost:9000/clients: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59686
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "889e5772-6ef1-41ba-a71c-9facf266ab72",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "90"
+  },
+  "Request Body": "{\r\n    \"clientId\":15,\r\n    \"firstName\":\"Client_15\",\r\n    \"lastName\":\"WasDeletedNowBack\"\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:12:41 GMT",
+    "content-type": "application/json",
+    "content-length": "121"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Client{clientId=15, firstName='Client_15', lastName='WasDeletedNowBack'} created successfully.\"}"
+}
+23:14:24.792 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59707
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "f9285faf-13bf-4b97-bd1a-38745dd38a1d",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "70"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":13.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:14:22 GMT",
+    "content-type": "application/json",
+    "content-length": "97"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=1, clientId=15, balance=13.95} created successfully.\"}"
+}
+23:14:42.460 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59707
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "03b36b78-c769-4f75-91a6-1c78f2e2476f",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "69"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":2.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:14:41 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=2, clientId=15, balance=2.95} created successfully.\"}"
+}
+23:14:50.250 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59707
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "0d80138e-338f-4770-ad16-e2c314d13680",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "69"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":3.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:14:47 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=3, clientId=15, balance=3.95} created successfully.\"}"
+}
+23:15:00.319 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59707
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "e269ae67-640f-47d7-a4b7-c07afb9e2a10",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "69"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":5.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:14:55 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=4, clientId=15, balance=5.95} created successfully.\"}"
+}
+23:15:08.392 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 59707
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "29fec3df-58e9-47cd-bda0-546aff906f8e",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "69"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":6.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:15:06 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=5, clientId=15, balance=6.95} created successfully.\"}"
+}
+23:15:55.816 POST http://localhost:9000/clients/15/accounts: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55602
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "0ce0663c-35f9-4e40-82b3-c04802b8f2e0",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "69"
+  },
+  "Request Body": "{\r\n    \"accountId\":null,\r\n    \"clientId\":null,\r\n    \"balance\":7.95\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:15:47 GMT",
+    "content-type": "application/json",
+    "content-length": "96"
+  },
+  "Response Body": "{\"status\":201,\"message\":\"Account{accountId=6, clientId=15, balance=7.95} created successfully.\"}"
+}
+23:16:32.566 DELETE http://localhost:9000/clients/15/accounts/6: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55602
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "7548c3b5-3ad1-4e20-b0a0-e6e6ca321bcf",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:16:24 GMT",
+    "content-type": "application/json",
+    "content-length": "89"
+  },
+  "Response Body": "{\"status\":205,\"message\":\"Account with accountID=6 and clientId=15 successfully deleted.\"}"
+}
+23:17:07.734 DELETE http://localhost:9000/clients/15/accounts/6: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55616
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "f930b830-cd59-4a18-aa52-f0f89b3d26c9",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:17:06 GMT",
+    "content-type": "application/json",
+    "content-length": "117"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Delete account unsuccessful.  Account (accountID=6) and/or client (clientId=15) not found.\"}"
+}
+23:18:31.091 PATCH http://localhost:9000/clients/17/accounts/12: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55638
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "920f63be-7842-41af-a2f0-3c3a362be3da",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "23"
+  },
+  "Request Body": "{\r\n    \"deposit\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:18:26 GMT",
+    "content-type": "application/json",
+    "content-length": "114"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Account deposit of 500.0 for accountId=12 and clientId=17 successful. New balance=500.0\"}"
+}
+23:19:06.550 PATCH http://localhost:9000/clients/17/accounts/12: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55638
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "2d396c74-21ea-40e5-b057-e768a2d90079",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "24"
+  },
+  "Request Body": "{\r\n    \"withdraw\":250\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:19:00 GMT",
+    "content-type": "application/json",
+    "content-length": "123"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=250.0.\"}"
+}
+23:19:22.004 PATCH http://localhost:9000/clients/17/accounts/12: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55638
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "ef8be2b1-60e6-4225-8236-7134b7a6dbb4",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "24"
+  },
+  "Request Body": "{\r\n    \"withdraw\":250\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:19:14 GMT",
+    "content-type": "application/json",
+    "content-length": "121"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=0.0.\"}"
+}
+23:19:32.047 PATCH http://localhost:9000/clients/17/accounts/12: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55638
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "2ec42b37-b0ca-4207-aadb-351248ca18b3",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "24"
+  },
+  "Request Body": "{\r\n    \"withdraw\":250\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:19:26 GMT",
+    "content-type": "application/json",
+    "content-length": "132"
+  },
+  "Response Body": "{\"status\":422,\"message\":\"Insufficient funds for withdrawal of 250.0 for accountId=12 and clientId=17. New balance would be -250.0.\"}"
+}
+23:20:20.183 PATCH http://localhost:9000/clients/17/accounts/13: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55657
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "2566ef26-17cb-4cc7-b876-55da2ee47213",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "24"
+  },
+  "Request Body": "{\r\n    \"withdraw\":250\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:20:19 GMT",
+    "content-type": "application/json",
+    "content-length": "105"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Withdrawal unsuccessful.  Account with accountId=13 and clientId=17 not found.\"}"
+}
+23:20:37.056 PATCH http://localhost:9000/clients/17/accounts/13: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55657
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "9773dabc-1db4-48b6-81a8-25f401f6dddc",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "23"
+  },
+  "Request Body": "{\r\n    \"deposit\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:20:36 GMT",
+    "content-type": "application/json",
+    "content-length": "102"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Deposit unsuccessful.  Account with accountId=13 and clientId=17 not found.\"}"
+}
+23:22:38.416 PATCH http://localhost:9000/clients/12/accounts/7/transfer/8: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55681
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "557c7e7b-6d7e-4266-b354-8ec619c81dc3",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "22"
+  },
+  "Request Body": "{\r\n    \"amount\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:22:12 GMT",
+    "content-type": "application/json",
+    "content-length": "183"
+  },
+  "Response Body": "{\"status\":404,\"message\":\"Transfer unsuccessful.  Account with accountId=8 and clientId=12 does not exist.  The account or client may have been deleted in the middle of the transfer.\"}"
+}
+23:26:48.713 PATCH http://localhost:9000/clients/12/accounts/7/transfer/8: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55732
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "7d04d3d4-e1ee-4063-9476-5db7d3df0bab",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "22"
+  },
+  "Request Body": "{\r\n    \"amount\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:26:42 GMT",
+    "content-type": "application/json",
+    "content-length": "139"
+  },
+  "Response Body": "{\"status\":422,\"message\":\"Transfer unsuccessful. Insufficient funds for account with accountId=7 clintId=12. Balance would fall to -500.0.\"}"
+}
+23:27:08.691 PATCH http://localhost:9000/clients/12/accounts/8/transfer/7: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55732
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "a02ce731-8825-4836-92b7-ed81f5f4a9c9",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "22"
+  },
+  "Request Body": "{\r\n    \"amount\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:26:59 GMT",
+    "content-type": "application/json",
+    "content-length": "156"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Transfer of 500.0 successful.  Client account (clientId=12, accountId=8) now has 0.75 and second account (accountId=7) has 500.0.\"}"
+}
+23:27:26.967 PATCH http://localhost:9000/clients/12/accounts/7/transfer/8: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 55732
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 9000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.4",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "51ea2435-329b-4dfd-9c7f-9a21570ae1af",
+    "host": "localhost:9000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "22"
+  },
+  "Request Body": "{\r\n    \"amount\":500\r\n}",
+  "Response Headers": {
+    "date": "Wed, 01 Dec 2021 05:27:18 GMT",
+    "content-type": "application/json",
+    "content-length": "156"
+  },
+  "Response Body": "{\"status\":200,\"message\":\"Transfer of 500.0 successful.  Client account (clientId=12, accountId=7) now has 0.0 and second account (accountId=8) has 500.75.\"}"
+}

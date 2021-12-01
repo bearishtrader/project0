@@ -1,0 +1,262 @@
+2021-11-27 18:59:03 ERROR ClientDaoImpl:81 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-11-27 19:35:57 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=13, balance=99.95} created successfully.'}
+2021-11-27 19:46:10 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=13, balance=1295.4} created successfully.'}
+2021-11-27 19:46:42 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "accounts_pkey"
+  Detail: Key (client_id, account_id)=(13, 1) already exists.
+2021-11-27 19:46:42 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=13, balance=1295.4} not created try setting accountID to null.'}
+2021-11-29 08:34:31 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "accounts_pkey"
+  Detail: Key (client_id, account_id)=(13, 1) already exists.
+2021-11-29 08:34:31 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=13, balance=1295.4} not created try setting accountID to null.'}
+2021-11-29 08:34:46 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=13 in balance range amountGreaterThan=200.0 to amountLessThan=1000.0.'}
+2021-11-29 08:35:12 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=13 in balance range amountGreaterThan=200.0 to amountLessThan=null.'}
+2021-11-29 08:35:34 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=13 retrieved successfully.'}
+2021-11-29 18:32:23 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Jason', lastName='Chan'} created successfully.'}
+2021-11-29 18:33:10 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='Jason', lastName='Chan'}]'}
+2021-11-29 18:33:27 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=1, firstName='Jason', lastName='Chan'} successfully retrieved.'}
+2021-11-29 18:33:31 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=10 not found.'}
+2021-11-29 18:33:55 ERROR ClientController:82 - StatusObj{status=404, message='Update unsuccessful.  Client with clientId=12 not found.'}
+2021-11-29 18:34:14 ERROR ClientController:106 - StatusObj{status=404, message='Delete unsuccessful.  Client with clientID=15 not found.'}
+2021-11-29 18:34:21 INFO  ClientController:101 - StatusObj{status=205, message='Client with clientID=1 successfully deleted.'}
+2021-11-29 18:37:22 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Jason', lastName='Chan'} created successfully.'}
+2021-11-29 18:37:46 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=2, firstName='Jason', lastName='Chan'}]'}
+2021-11-29 18:38:52 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=2, balance=350.25} created successfully.'}
+2021-11-29 18:39:17 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=2, balance=1000.75} created successfully.'}
+2021-11-29 18:39:31 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=2 retrieved successfully.'}
+2021-11-29 18:40:06 INFO  ClientController:101 - StatusObj{status=205, message='Client with clientID=2 successfully deleted.'}
+2021-11-29 18:40:16 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=2 not found.'}
+2021-11-29 18:41:07 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=2 not found.'}
+2021-11-29 18:41:56 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Jason', lastName='Chan'} created successfully.'}
+2021-11-29 18:42:19 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=3, firstName='Jason', lastName='Chan'}]'}
+2021-11-29 18:43:12 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=3, balance=275.0} created successfully.'}
+2021-11-29 18:43:17 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=3 retrieved successfully.'}
+2021-11-29 18:43:35 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "accounts_pkey"
+  Detail: Key (client_id, account_id)=(3, 1) already exists.
+2021-11-29 18:43:35 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=3, balance=3000.0} not created try setting accountID to null.'}
+2021-11-29 18:43:48 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=3, balance=3000.0} created successfully.'}
+2021-11-29 18:44:06 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=3 retrieved successfully.'}
+2021-11-29 18:44:21 INFO  ClientController:101 - StatusObj{status=205, message='Client with clientID=3 successfully deleted.'}
+2021-11-29 18:44:43 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=3.'}
+2021-11-29 18:45:43 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: insert or update on table "accounts" violates foreign key constraint "accounts_client_id_fkey"
+  Detail: Key (client_id)=(3) is not present in table "clients".
+2021-11-29 18:45:43 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=3, balance=3000.0} not created try setting accountID to null.'}
+2021-11-29 18:46:33 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=3.'}
+2021-11-29 18:46:40 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=3 not found.'}
+2021-11-29 18:49:21 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: insert or update on table "accounts" violates foreign key constraint "accounts_client_id_fkey"
+  Detail: Key (client_id)=(3) is not present in table "clients".
+2021-11-29 18:49:21 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=3, balance=3000.0} not created try setting accountID to null or also client with clientId=3 may not exist.'}
+2021-11-29 18:59:59 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=3 not found.'}
+2021-11-29 19:01:03 ERROR ClientController:44 - StatusObj{status=404, message='No clients found.'}
+2021-11-29 19:01:09 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='JSON', lastName='Chang'} created successfully.'}
+2021-11-29 19:01:42 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Margaret', lastName='Chen'} created successfully.'}
+2021-11-29 19:01:46 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='JSON', lastName='Chang'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}]'}
+2021-11-29 19:03:42 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=4, balance=2.0} created successfully.'}
+2021-11-29 19:03:49 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=4, balance=500.0} created successfully.'}
+2021-11-29 19:03:58 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=4, balance=900.0} created successfully.'}
+2021-11-29 19:04:30 ERROR AccountController:86 - StatusObj{status=404, message='No accounts and/or client exists for clientId=4 in balance range amountGreaterThan=2.0 to amountLessThan=200.0.'}
+2021-11-29 19:04:49 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=4 in balance range amountGreaterThan=1.0 to amountLessThan=200.0.'}
+2021-11-29 19:05:20 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=4 in balance range amountGreaterThan=1.0 to amountLessThan=1000.0.'}
+2021-11-29 19:05:36 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=4 in balance range amountGreaterThan=1.0 to amountLessThan=500.5.'}
+2021-11-29 19:07:28 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=5, firstName='Margaret', lastName='Chen'} successfully retrieved.'}
+2021-11-29 19:07:41 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=7 not found.'}
+2021-11-29 19:09:10 INFO  ClientController:78 - StatusObj{status=200, message='Client 4 successfully updated.'}
+2021-11-30 18:59:31 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='John', lastName='Smith+'} created successfully.'}
+2021-11-30 18:59:53 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}]'}
+2021-11-30 19:00:51 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=10 not found.'}
+2021-11-30 19:01:38 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=10, firstName='Pat', lastName='O'Toole'} created successfully.'}
+2021-11-30 19:02:20 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=10, firstName='Pat', lastName='O'Toole'} successfully retrieved.'}
+2021-11-30 19:03:41 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=12, firstName='Client', lastName='Twelve'} created successfully.'}
+2021-11-30 19:04:24 INFO  ClientController:78 - StatusObj{status=200, message='Client 12 successfully updated.'}
+2021-11-30 19:04:31 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=12, firstName='Client12', lastName='Twelve12'} successfully retrieved.'}
+2021-11-30 19:04:50 ERROR ClientController:106 - StatusObj{status=404, message='Delete unsuccessful.  Client with clientID=15 not found.'}
+2021-11-30 19:05:25 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=15, firstName='Client15', lastName='Fifteen'} created successfully.'}
+2021-11-30 19:06:06 INFO  ClientController:101 - StatusObj{status=205, message='Client with clientID=15 successfully deleted.'}
+2021-11-30 19:06:13 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=15 not found.'}
+2021-11-30 19:06:43 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:08:10 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=5.'}
+2021-11-30 19:08:29 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=5, balance=0.12} created successfully.'}
+2021-11-30 19:09:47 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: insert or update on table "accounts" violates foreign key constraint "accounts_client_id_fkey"
+  Detail: Key (client_id)=(7) is not present in table "clients".
+2021-11-30 19:09:47 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=7, balance=0.12} not created try setting accountID to null or also client with clientId=7 may not exist.'}
+2021-11-30 19:10:02 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=7.'}
+2021-11-30 19:11:01 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=7.'}
+2021-11-30 19:11:17 ERROR ClientDaoImpl:43 - org.postgresql.util.PSQLException: ERROR: insert or update on table "accounts" violates foreign key constraint "accounts_client_id_fkey"
+  Detail: Key (client_id)=(7) is not present in table "clients".
+2021-11-30 19:11:17 ERROR AccountController:27 - StatusObj{status=400, message='An error has occurred, Account{accountId=1, clientId=7, balance=0.75} not created try setting accountID to null or also client with clientId=7 may not exist.'}
+2021-11-30 19:13:19 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Jane', lastName='Doe'} created successfully.'}
+2021-11-30 19:13:31 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:15:20 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=7, balance=0.12} created successfully.'}
+2021-11-30 19:15:35 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=7 retrieved successfully.'}
+2021-11-30 19:15:58 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=7, balance=300.12} created successfully.'}
+2021-11-30 19:16:11 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=7, balance=500.0} created successfully.'}
+2021-11-30 19:16:19 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=7 retrieved successfully.'}
+2021-11-30 19:17:09 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=7 in balance range amountGreaterThan=0.12 to amountLessThan=500.0.'}
+2021-11-30 19:17:21 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=7 in balance range amountGreaterThan=0.12 to amountLessThan=null.'}
+2021-11-30 19:17:41 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=7 in balance range amountGreaterThan=null to amountLessThan=500.0.'}
+2021-11-30 19:18:00 ERROR AccountController:86 - StatusObj{status=404, message='No accounts and/or client exists for clientId=11.'}
+2021-11-30 19:18:28 ERROR AccountController:108 - StatusObj{status=404, message='No account found with clientId=9 accountId=4.'}
+2021-11-30 19:20:01 ERROR AccountController:129 - StatusObj{status=404, message='No account found with clientId=10 accountId=3'}
+2021-11-30 19:20:13 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=10.'}
+2021-11-30 19:20:23 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:20:41 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=10.'}
+2021-11-30 19:21:04 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=10, balance=200.0} created successfully.'}
+2021-11-30 19:21:22 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=10, balance=202.0} created successfully.'}
+2021-11-30 19:21:39 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=10, balance=2.95} created successfully.'}
+2021-11-30 19:23:04 INFO  AccountController:123 - StatusObj{status=200, message='Account 3 for clientId=10 successfully updated.'}
+2021-11-30 19:23:26 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=3, clientId=10, balance=3.32} successfully retrieved.'}
+2021-11-30 19:25:39 INFO  AccountController:123 - StatusObj{status=200, message='Account 3 for clientId=10 successfully updated.  Balance is now 3.37.'}
+2021-11-30 19:26:30 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=10 retrieved successfully.'}
+2021-11-30 19:26:43 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:28:47 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=8, firstName='Client_8', lastName='Eight'} created successfully.'}
+2021-11-30 19:29:04 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=9, firstName='Client_9', lastName='Nine'} created successfully.'}
+2021-11-30 19:29:47 ERROR ClientDaoImpl:31 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "clients_pkey"
+  Detail: Key (client_id)=(8) already exists.
+2021-11-30 19:29:47 ERROR ClientController:25 - StatusObj{status=400, message='An error has occurred, Client{clientId=null, firstName='Margaret', lastName='Thatcher'} not created try setting clientID to null.'}
+2021-11-30 19:30:08 ERROR ClientDaoImpl:31 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "clients_pkey"
+  Detail: Key (client_id)=(9) already exists.
+2021-11-30 19:30:08 ERROR ClientController:25 - StatusObj{status=400, message='An error has occurred, Client{clientId=null, firstName='Margaret', lastName='Thatcher'} not created try setting clientID to null.'}
+2021-11-30 19:30:17 ERROR ClientDaoImpl:31 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "clients_pkey"
+  Detail: Key (client_id)=(10) already exists.
+2021-11-30 19:30:17 ERROR ClientController:25 - StatusObj{status=400, message='An error has occurred, Client{clientId=null, firstName='Margaret', lastName='Thatcher'} not created try setting clientID to null.'}
+2021-11-30 19:30:22 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Margaret', lastName='Thatcher'} created successfully.'}
+2021-11-30 19:30:42 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:31:14 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:32:02 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:32:13 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:32:33 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:32:57 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=1, firstName='First', lastName='Client'} created successfully.'}
+2021-11-30 19:33:05 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:33:27 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:33:35 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=2, firstName='Client_2', lastName='Two'} created successfully.'}
+2021-11-30 19:33:52 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=3, firstName='Client_3', lastName='Three'} created successfully.'}
+2021-11-30 19:34:08 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 19:35:21 ERROR AccountController:108 - StatusObj{status=404, message='No account found with clientId=9 accountId=4.'}
+2021-11-30 19:35:43 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=9.'}
+2021-11-30 19:36:54 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=9, balance=0.12} created successfully.'}
+2021-11-30 19:37:03 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=9, balance=3.12} created successfully.'}
+2021-11-30 19:37:19 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=9, balance=4.12} created successfully.'}
+2021-11-30 19:37:29 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=9, balance=5.95} created successfully.'}
+2021-11-30 19:37:36 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=9 retrieved successfully.'}
+2021-11-30 19:38:54 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=4, clientId=9, balance=5.95} successfully retrieved.'}
+2021-11-30 19:39:31 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=3, clientId=10, balance=3.37} successfully retrieved.'}
+2021-11-30 19:39:51 INFO  AccountController:123 - StatusObj{status=200, message='Account 3 for clientId=10 successfully updated.  Balance is now 14.95.'}
+2021-11-30 19:40:21 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=15.'}
+2021-11-30 19:40:30 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=15 not found.'}
+2021-11-30 19:58:22 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}]'}
+2021-11-30 20:00:13 ERROR ClientDaoImpl:31 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "clients_pkey"
+  Detail: Key (client_id)=(12) already exists.
+2021-11-30 20:00:13 ERROR ClientController:25 - StatusObj{status=400, message='An error has occurred, Client{clientId=null, firstName='Client_13', lastName='Thirteen'} not created try setting clientID to null.'}
+2021-11-30 20:00:23 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_13', lastName='Thirteen'} created successfully.'}
+2021-11-30 20:00:38 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}, Client{clientId=13, firstName='Client_13', lastName='Thirteen'}]'}
+2021-11-30 20:01:05 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_14', lastName='Fourteen'} created successfully.'}
+2021-11-30 21:17:59 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}, Client{clientId=13, firstName='Client_13', lastName='Thirteen'}, Client{clientId=14, firstName='Client_14', lastName='Fourteen'}]'}
+2021-11-30 21:18:26 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_15', lastName='Fifteen'} created successfully.'}
+2021-11-30 21:18:44 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_16', lastName='Sixteen'} created successfully.'}
+2021-11-30 21:19:01 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_17', lastName='Seventeen'} created successfully.'}
+2021-11-30 21:21:00 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=15, balance=121.35} created successfully.'}
+2021-11-30 21:21:10 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=15, balance=0.25} created successfully.'}
+2021-11-30 21:21:18 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=15, balance=3.75} created successfully.'}
+2021-11-30 21:21:36 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=15, balance=9.99} created successfully.'}
+2021-11-30 21:21:48 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=15, balance=22.95} created successfully.'}
+2021-11-30 21:22:04 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=6, clientId=15, balance=15.99} created successfully.'}
+2021-11-30 21:22:21 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=17, balance=15.99} created successfully.'}
+2021-11-30 21:22:51 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=17, balance=34.0} created successfully.'}
+2021-11-30 21:23:08 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=17, firstName='Client_17', lastName='Seventeen'} successfully retrieved.'}
+2021-11-30 21:23:26 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=17 retrieved successfully.'}
+2021-11-30 21:23:44 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=17 retrieved successfully.'}
+2021-11-30 21:24:13 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=17 retrieved successfully.'}
+2021-11-30 21:24:21 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=17, balance=99.95} created successfully.'}
+2021-11-30 21:25:18 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=17, balance=42.19} created successfully.'}
+2021-11-30 21:25:36 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=17, balance=53.87} created successfully.'}
+2021-11-30 21:25:52 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=6, clientId=17, balance=44.21} created successfully.'}
+2021-11-30 21:26:12 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=7, clientId=17, balance=58.1} created successfully.'}
+2021-11-30 21:26:39 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=8, clientId=17, balance=22.95} created successfully.'}
+2021-11-30 21:28:02 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=9, clientId=17, balance=500.0} created successfully.'}
+2021-11-30 21:28:54 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=10, clientId=17, balance=250.12} created successfully.'}
+2021-11-30 21:29:04 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=11, clientId=17, balance=125.5} created successfully.'}
+2021-11-30 21:29:12 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=12, clientId=17, balance=375.5} created successfully.'}
+2021-11-30 21:30:18 INFO  AccountController:167 - StatusObj{status=200, message='Account deposit of 500.0 for accountId=12 and clientId=17 successful. New balance=875.5'}
+2021-11-30 21:30:52 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=12, clientId=17, balance=875.5} successfully retrieved.'}
+2021-11-30 21:31:22 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=12, clientId=17, balance=875.5} successfully retrieved.'}
+2021-11-30 21:31:51 ERROR ClientDaoImpl:81 - org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+2021-11-30 21:31:51 ERROR AccountController:169 - StatusObj{status=404, message='Withdrawal unsuccessful.  Account with accountId=12 and clientId=17 not found.'}
+2021-11-30 21:32:17 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=12, clientId=17, balance=875.5} successfully retrieved.'}
+2021-11-30 21:32:52 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=625.5.'}
+2021-11-30 21:33:12 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=375.5.'}
+2021-11-30 21:33:20 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=125.5.'}
+2021-11-30 21:33:28 ERROR AccountController:169 - StatusObj{status=422, message='Insufficient funds for withdrawal of 250.0 for accountId=12 and clientId=17. New balance would be -124.5.'}
+2021-11-30 21:33:53 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=12, clientId=17, balance=125.5} successfully retrieved.'}
+2021-11-30 21:34:14 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=12, clientId=17, balance=125.5} successfully retrieved.'}
+2021-11-30 21:34:23 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 125.5 for account with accountId=12 and clientId=17 successful. New balance=0.0.'}
+2021-11-30 21:35:06 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 1.0E-4 for account with accountId=12 and clientId=17 successful. New balance=0.0.'}
+2021-11-30 21:40:10 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=12.'}
+2021-11-30 21:41:41 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=12, balance=1.25} created successfully.'}
+2021-11-30 21:41:50 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=12, balance=2.25} created successfully.'}
+2021-11-30 21:41:59 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=12, balance=3.25} created successfully.'}
+2021-11-30 21:42:15 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=12, balance=4.25} created successfully.'}
+2021-11-30 21:42:25 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=12, balance=5.25} created successfully.'}
+2021-11-30 21:42:36 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=6, clientId=12, balance=6.25} created successfully.'}
+2021-11-30 21:42:44 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=7, clientId=12, balance=500.25} created successfully.'}
+2021-11-30 21:43:28 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=8, clientId=12, balance=0.75} created successfully.'}
+2021-11-30 21:44:52 INFO  AccountController:183 - StatusObj{status=200, message='Transfer of 500.0 successful.  Client account (clientId=12, accountId=7) now has 0.25 and second account (accountId=8) has 500.75.'}
+2021-11-30 21:45:19 ERROR AccountController:185 - StatusObj{status=422, message='Transfer unsuccessful. Insufficient funds for account with accountId=7 clintId=12. Balance would fall to -499.75.'}
+2021-11-30 21:46:02 ERROR AccountController:185 - StatusObj{status=404, message='Transfer unsuccessful.  Account with accountId=7 and clientId=18 does not exist.'}
+2021-11-30 21:46:50 ERROR AccountController:129 - StatusObj{status=404, message='No account found with clientId=18 accountId=7'}
+2021-11-30 21:47:07 INFO  AccountController:123 - StatusObj{status=200, message='Account 7 for clientId=12 successfully updated.  Balance is now 500.0.'}
+2021-11-30 21:48:57 INFO  AccountController:123 - StatusObj{status=200, message='Account 7 for clientId=12 successfully updated.  Balance is now 500.0.'}
+2021-11-30 21:56:35 ERROR ClientDaoImpl:31 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "clients_pkey"
+  Detail: Key (client_id)=(1) already exists.
+2021-11-30 21:56:35 ERROR ClientController:25 - StatusObj{status=400, message='An error has occurred, Client{clientId=1, firstName='First', lastName='Client'} not created try setting clientID to null.'}
+2021-11-30 22:05:08 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='New', lastName='Client_201'} created successfully.'}
+2021-11-30 22:23:06 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Test', lastName='User'} created successfully.'}
+2021-11-30 22:28:50 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Twelve12'}, Client{clientId=13, firstName='Client_13', lastName='Thirteen'}, Client{clientId=14, firstName='Client_14', lastName='Fourteen'}, Client{clientId=15, firstName='Client_15', lastName='Fifteen'}, Client{clientId=16, firstName='Client_16', lastName='Sixteen'}, Client{clientId=17, firstName='Client_17', lastName='Seventeen'}, Client{clientId=18, firstName='New', lastName='Client_201'}, Client{clientId=19, firstName='Test', lastName='User'}]'}
+2021-11-30 22:33:44 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=10, firstName='Pat', lastName='O'Toole'} successfully retrieved.'}
+2021-11-30 22:34:09 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=20 not found.'}
+2021-11-30 22:35:22 INFO  ClientController:78 - StatusObj{status=200, message='Client 12 successfully updated.'}
+2021-11-30 22:37:59 INFO  ClientController:78 - StatusObj{status=200, message='Client 19 successfully updated.'}
+2021-11-30 22:38:30 ERROR ClientDaoImpl:67 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-11-30 22:38:30 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=19 not found.'}
+2021-11-30 22:45:52 INFO  ClientController:78 - StatusObj{status=200, message='Client 19 successfully updated.'}
+2021-11-30 22:47:04 INFO  ClientController:78 - StatusObj{status=200, message='Client 19 successfully updated.'}
+2021-11-30 22:47:42 ERROR ClientController:82 - StatusObj{status=404, message='Update unsuccessful.  Client with clientId=20 not found.'}
+2021-11-30 22:49:59 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=null, firstName='Client_20', lastName='Twenty'} created successfully.'}
+2021-11-30 22:50:27 INFO  ClientController:38 - StatusObj{status=200, message='Successfully retrieved list of all clients [Client{clientId=1, firstName='First', lastName='Client'}, Client{clientId=2, firstName='Client_2', lastName='Two'}, Client{clientId=3, firstName='Client_3', lastName='Three'}, Client{clientId=4, firstName='Jason', lastName='Chan'}, Client{clientId=5, firstName='Margaret', lastName='Chen'}, Client{clientId=6, firstName='John', lastName='Smith+'}, Client{clientId=7, firstName='Jane', lastName='Doe'}, Client{clientId=8, firstName='Client_8', lastName='Eight'}, Client{clientId=9, firstName='Client_9', lastName='Nine'}, Client{clientId=10, firstName='Pat', lastName='O'Toole'}, Client{clientId=11, firstName='Margaret', lastName='Thatcher'}, Client{clientId=12, firstName='Client12', lastName='Updated_by_PUT'}, Client{clientId=13, firstName='Client_13', lastName='Thirteen'}, Client{clientId=14, firstName='Client_14', lastName='Fourteen'}, Client{clientId=15, firstName='Client_15', lastName='Fifteen'}, Client{clientId=16, firstName='Client_16', lastName='Sixteen'}, Client{clientId=17, firstName='Client_17', lastName='Seventeen'}, Client{clientId=18, firstName='New', lastName='Client_201'}, Client{clientId=19, firstName='Client19', lastName='Nineteen'}, Client{clientId=20, firstName='Client_20', lastName='Twenty'}]'}
+2021-11-30 22:50:51 INFO  ClientController:57 - StatusObj{status=200, message='Client Client{clientId=10, firstName='Pat', lastName='O'Toole'} successfully retrieved.'}
+2021-11-30 22:51:09 ERROR ClientController:64 - StatusObj{status=404, message='Client with clientId=21 not found.'}
+2021-11-30 22:52:14 INFO  ClientController:78 - StatusObj{status=200, message='Client 12 successfully updated.'}
+2021-11-30 22:53:34 ERROR ClientDaoImpl:84 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-11-30 22:53:34 ERROR ClientController:82 - StatusObj{status=404, message='Update unsuccessful.  Client with clientId=21 not found.'}
+2021-11-30 22:54:31 INFO  ClientController:101 - StatusObj{status=205, message='Client with clientID=15 successfully deleted.'}
+2021-11-30 22:55:07 ERROR ClientController:106 - StatusObj{status=404, message='Delete unsuccessful.  Client with clientID=21 not found.'}
+2021-11-30 22:58:16 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=5, balance=55.55} created successfully.'}
+2021-11-30 22:58:54 INFO  AccountController:43 - StatusObj{status=200, message='Accounts for clientId=7 retrieved successfully.'}
+2021-11-30 23:00:15 ERROR AccountController:49 - StatusObj{status=404, message='No accounts found with clientID=21.'}
+2021-11-30 23:02:49 INFO  AccountController:82 - StatusObj{status=200, message='Accounts successfully retrieved for clientId=7 in balance range amountGreaterThan=400.0 to amountLessThan=2000.0.'}
+2021-11-30 23:03:29 ERROR ClientDaoImpl:62 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-11-30 23:03:29 ERROR AccountController:86 - StatusObj{status=404, message='No accounts and/or client exists for clientId=21.'}
+2021-11-30 23:04:22 INFO  AccountController:101 - StatusObj{status=200, message='Account Account{accountId=4, clientId=9, balance=5.95} successfully retrieved.'}
+2021-11-30 23:05:00 ERROR AccountController:108 - StatusObj{status=404, message='No account found with clientId=21 accountId=4.'}
+2021-11-30 23:06:22 ERROR AccountController:108 - StatusObj{status=404, message='No account found with clientId=9 accountId=5.'}
+2021-11-30 23:09:40 INFO  AccountController:123 - StatusObj{status=200, message='Account 3 for clientId=10 successfully updated.  Balance is now 99.95.'}
+2021-11-30 23:10:17 ERROR AccountController:129 - StatusObj{status=404, message='No account found with clientId=10 accountId=4'}
+2021-11-30 23:10:43 ERROR AccountController:129 - StatusObj{status=404, message='No account found with clientId=21 accountId=4'}
+2021-11-30 23:11:11 ERROR AccountController:154 - StatusObj{status=404, message='Delete account unsuccessful.  Account (accountID=6) and/or client (clientId=15) not found.'}
+2021-11-30 23:12:43 INFO  ClientController:21 - StatusObj{status=201, message='Client{clientId=15, firstName='Client_15', lastName='WasDeletedNowBack'} created successfully.'}
+2021-11-30 23:14:24 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=1, clientId=15, balance=13.95} created successfully.'}
+2021-11-30 23:14:42 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=2, clientId=15, balance=2.95} created successfully.'}
+2021-11-30 23:14:50 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=3, clientId=15, balance=3.95} created successfully.'}
+2021-11-30 23:15:00 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=4, clientId=15, balance=5.95} created successfully.'}
+2021-11-30 23:15:08 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=5, clientId=15, balance=6.95} created successfully.'}
+2021-11-30 23:15:55 INFO  AccountController:25 - StatusObj{status=201, message='Account{accountId=6, clientId=15, balance=7.95} created successfully.'}
+2021-11-30 23:16:32 INFO  AccountController:149 - StatusObj{status=205, message='Account with accountID=6 and clientId=15 successfully deleted.'}
+2021-11-30 23:17:07 ERROR AccountController:154 - StatusObj{status=404, message='Delete account unsuccessful.  Account (accountID=6) and/or client (clientId=15) not found.'}
+2021-11-30 23:18:31 INFO  AccountController:167 - StatusObj{status=200, message='Account deposit of 500.0 for accountId=12 and clientId=17 successful. New balance=500.0'}
+2021-11-30 23:19:06 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=250.0.'}
+2021-11-30 23:19:21 INFO  AccountController:167 - StatusObj{status=200, message='Withdrawal of 250.0 for account with accountId=12 and clientId=17 successful. New balance=0.0.'}
+2021-11-30 23:19:32 ERROR AccountController:169 - StatusObj{status=422, message='Insufficient funds for withdrawal of 250.0 for accountId=12 and clientId=17. New balance would be -250.0.'}
+2021-11-30 23:20:20 ERROR AccountController:169 - StatusObj{status=404, message='Withdrawal unsuccessful.  Account with accountId=13 and clientId=17 not found.'}
+2021-11-30 23:20:37 ERROR AccountController:169 - StatusObj{status=404, message='Deposit unsuccessful.  Account with accountId=13 and clientId=17 not found.'}
+2021-11-30 23:22:38 ERROR ClientDaoImpl:98 - org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+2021-11-30 23:22:38 ERROR AccountController:185 - StatusObj{status=404, message='Transfer unsuccessful.  Account with accountId=8 and clientId=12 does not exist.  The account or client may have been deleted in the middle of the transfer.'}
+2021-11-30 23:26:48 ERROR AccountController:185 - StatusObj{status=422, message='Transfer unsuccessful. Insufficient funds for account with accountId=7 clintId=12. Balance would fall to -500.0.'}
+2021-11-30 23:27:08 INFO  AccountController:183 - StatusObj{status=200, message='Transfer of 500.0 successful.  Client account (clientId=12, accountId=8) now has 0.75 and second account (accountId=7) has 500.0.'}
+2021-11-30 23:27:26 INFO  AccountController:183 - StatusObj{status=200, message='Transfer of 500.0 successful.  Client account (clientId=12, accountId=7) now has 0.0 and second account (accountId=8) has 500.75.'}

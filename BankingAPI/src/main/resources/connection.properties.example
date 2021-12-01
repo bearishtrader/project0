@@ -1,0 +1,4 @@
+# Our Connection object parameters including JDBC string and RDS database username/password
+jdbc_connection_url={put here for example jdbc:postgresql://youramazinawsRDSinstance/databasename}
+database_username={database username such as postgres}
+database_password={replace this and brackets with your password}
